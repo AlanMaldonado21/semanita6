@@ -1,0 +1,53 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        width: 5rem;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                margin: 5px;
+                a{
+                    @include enlaces;
+                }
+            }
+        }
+    }
+
+    .crear-cuenta{
+        display: flex;
+        align-items: center;
+        .ingreso{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: $color-rojo;
+                font-family: $font-arial;
+                font-size: 14px;
+            }
+            img{
+                width: 35px;
+            }
+        }
+        a:last-child{
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-family: $font-arial;
+            background-color: blue;
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+
+}

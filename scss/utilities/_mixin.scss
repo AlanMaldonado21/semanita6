@@ -1,0 +1,42 @@
+@mixin botones {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin enlaces {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+// mixin con variables
+@mixin botones-variables($color, $bg-color, $font-family, $padding, $text-deco) {
+    color: $color;
+    background-color: $bg-color;
+    font-family: $font-family;
+    padding: $padding;
+    text-decoration: $text-deco;
+    border-radius: 5px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .boton-mixin {
+       @include botones-variables( red, blue, Helvetica, 50px, underline)
+    }
+
+    a:nth-child(2){
+        @include botones;
+    }
+    .boton {
+        @include botones;
+    }
+}
