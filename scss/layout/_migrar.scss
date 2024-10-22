@@ -1,0 +1,62 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 15px;
+
+    span {
+        color: yellow;
+    }
+}
+
+section {
+    img {
+        width: 50%;
+    }
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+
+    img {
+        width: 8rem;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
+
+.anuncio{
+    background-color: red;
+    p{
+        color: black;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1a1a1a;
+}
