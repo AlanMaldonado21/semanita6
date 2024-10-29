@@ -1,52 +1,59 @@
 @import "../utilities/variables";
 @import "../utilities/mixin";
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    img{
+
+    img {
         width: 5rem;
     }
 
-    nav{
-        ul{
+    nav {
+        ul {
             display: flex;
             list-style: none;
-            li{
+
+            li {
                 margin: 5px;
-                a{
+
+                a {
                     @include enlaces;
                 }
             }
         }
     }
 
-    .crear-cuenta{
+    .crear-cuenta {
         display: flex;
         align-items: center;
-        .ingreso{
+
+        .ingreso {
             display: flex;
             align-items: center;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $color-rojo;
                 font-family: $font-arial;
                 font-size: 14px;
             }
-            img{
+
+            img {
                 width: 35px;
             }
         }
-        a:last-child{
-            margin-left: 15px;
-            color: white;
-            text-decoration: none;
-            font-family: $font-arial;
-            background-color: blue;
-            font-size: 14px;
-            padding: 10px;
+
+        a:last-child {
+            // gradiente lineal      direccion, color1,color2
+            background-color: yellow;
+            padding: 15px;
             border-radius: 5px;
+            transition: 2s;
+            &:hover {
+                transform: skew(30deg);
+            }
         }
     }
 

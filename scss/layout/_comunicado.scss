@@ -1,10 +1,27 @@
 .comunicado {
     padding: 10px;
-    background-color: #3DC28F;
+    background: rgb(31, 245, 84);
+    background: -moz-linear-gradient(77deg, rgba(31, 245, 84, 1) 0%, rgba(42, 235, 226, 0.9416141456582633) 81%);
+    background: -webkit-linear-gradient(77deg, rgba(31, 245, 84, 1) 0%, rgba(42, 235, 226, 0.9416141456582633) 81%);
+    background: linear-gradient(77deg, rgba(31, 245, 84, 1) 0%, rgba(42, 235, 226, 0.9416141456582633) 81%);
+
 
     p {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 13px;
     }
-}   
+}
+
+
+#boton1 {
+    // 
+    color: white;
+    padding: 15px;
+    background-image: radial-gradient(circle, blue, red);
+    transition: 1s;
+
+    &:hover {
+        background-color: black;
+    }
+}

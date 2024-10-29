@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODERHOUSE</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- LINK DEL AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- LINK DE ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
+
 <body>
 
     <div class="comunicado">
@@ -14,7 +21,8 @@
     </div>
 
     <header>
-        <img src="https://play-lh.googleusercontent.com/b5jAawm636pmjPudBifu_jxGomx4xfOG7P7cKuJpJF8nnHw_86y6adH0pUp1ZZe_Jsw" alt="icono cocos">
+        <img src="https://play-lh.googleusercontent.com/b5jAawm636pmjPudBifu_jxGomx4xfOG7P7cKuJpJF8nnHw_86y6adH0pUp1ZZe_Jsw"
+            alt="icono cocos">
         <nav>
             <ul>
                 <li><a href="#">Nosotros</a></li>
@@ -32,26 +40,38 @@
         </div>
     </header>
 
-    <section class="botones">
-        <a href="" class="boton">Botón</a>
-        <a href="">Botón</a>
-        <a href="" class="boton-mixin">Botón</a>
+    <section class="gradiente-container" data-aos="flip-left">
+
+        <div>
+            <h1 class="h1-gradiente ">¿Qué es la CoderBeca?</h1>
+            <p class="animate__animated animate__flipInX">Nuestra misión es democratizar la educación de calidad en
+                Latinoamérica. Para eso, te ofrecemos una
+                CoderBeca del 70% para que puedas capacitarte y crecer profesionalmente.</p>
+        </div>
+
+        <div class="div-2">
+            <h2>¿Cómo accedo?</h2>
+            <p>El acceso a la CoderBeca es automático y para todos, solo tenés que cumplir con 2 requisitos una vez
+                dentro del curso:</p>
+            <ul>
+                <li>Entregar tus proyectos prácticos en tiempo y forma</li>
+                <li>Cumplir con el 70% de asistencia a las clases en vivo</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- 
+    <a href="#" class="boton-wpp">
+        <img src="assets/icons8-whatsapp-96 (4).png" alt="logo wpp">
+    </a>
 
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
+    <div class="typewriter">
+        <h1>Animación de escribir :)</h1>
     </div>
 
-
-
-     -->
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

@@ -1,11 +1,24 @@
 .comunicado {
   padding: 10px;
-  background-color: #3DC28F;
+  background: rgb(31, 245, 84);
+  background: -moz-linear-gradient(77deg, rgb(31, 245, 84) 0%, rgba(42, 235, 226, 0.9416141457) 81%);
+  background: -webkit-linear-gradient(77deg, rgb(31, 245, 84) 0%, rgba(42, 235, 226, 0.9416141457) 81%);
+  background: linear-gradient(77deg, rgb(31, 245, 84) 0%, rgba(42, 235, 226, 0.9416141457) 81%);
 }
 .comunicado p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+}
+
+#boton1 {
+  color: white;
+  padding: 15px;
+  background-image: radial-gradient(circle, blue, red);
+  transition: 1s;
+}
+#boton1:hover {
+  background-color: black;
 }
 
 .botones {
@@ -77,14 +90,124 @@ header .crear-cuenta .ingreso img {
   width: 35px;
 }
 header .crear-cuenta a:last-child {
-  margin-left: 15px;
-  color: white;
-  text-decoration: none;
-  font-family: Arial;
-  background-color: blue;
-  font-size: 14px;
-  padding: 10px;
+  background-color: yellow;
+  padding: 15px;
   border-radius: 5px;
+  transition: 2s;
+}
+header .crear-cuenta a:last-child:hover {
+  transform: skew(30deg);
+}
+
+.gradiente-container {
+  margin: 25px;
+  padding: 45px;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #EEFA6E, #D1E50C);
+}
+.gradiente-container div:first-child {
+  width: 350px;
+  margin-right: 25px;
+}
+.gradiente-container div:first-child h1 {
+  transition: 2s;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gradiente-container div:first-child h1:hover {
+  transform: scale(0.5);
+}
+.gradiente-container div:first-child p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.gradiente-container div:last-child {
+  padding: 35px;
+  background-color: #1A1A1A;
+  width: 300px;
+  height: 190px;
+  border-radius: 5px;
+  box-shadow: -2px 7px 47px 4px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: -2px 7px 47px 4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -2px 7px 47px 4px rgba(0, 0, 0, 0.63);
+}
+.gradiente-container div:last-child:hover {
+  transform: translateY(-1rem) rotate(3deg);
+}
+.gradiente-container div:last-child h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.9rem;
+}
+.gradiente-container div:last-child p {
+  margin-top: 10px;
+  color: #A4A4A4;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gradiente-container div:last-child ul {
+  margin-top: 25px;
+  color: #A4A4A4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.gradiente-container div:last-child ul li {
+  margin-top: 10px;
+}
+
+.boton-wpp {
+  position: fixed;
+  bottom: 25px;
+  right: 45px;
+  transition: 3s;
+}
+.boton-wpp img {
+  width: 50px;
+}
+.boton-wpp:hover {
+  transform: rotate(360deg) translateY(-65px) translateX(-60px);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.h1-gradiente {
+  animation-name: cambiarColorLetras;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.typewriter h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 * {
@@ -93,7 +216,7 @@ header .crear-cuenta a:last-child {
 }
 
 body {
-  background-color: #F2F7FD;
+  background-color: #1a1a1a;
 }
 
 .botones {
